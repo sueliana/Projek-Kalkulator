@@ -15,19 +15,9 @@ def dua_no_dr_pengguna():
     return no1,no2
 
 def kiracetak(jenisoperator,no1,no2):
-    if jenisoperator == 1:
-        print("output : " ,no1, " + " ,no2, " = ", no1+no2 , "\n")
-    elif jenisoperator == 2:
-        print("output : " ,no1, " - " ,no2, " = ", no1-no2, "\n")
-    elif jenisoperator == 3:
-        print("output : " ,no1, " * " ,no2, " = ", no1*no2, "\n")
-    elif jenisoperator == 4:
-        print("output : " ,no1, " / " ,no2, " = " ,no1/no2, "\n")
-    elif jenisoperator == 5:
-        print("output : " ,no1, " kuasa " ,no2," = " ,no1**no2, "\n")
-    elif jenisoperator == 6:
-        print("output : " ,no1, " punca kuasa " ,no2, " = " ,(round(no1**(1/no2),2)), "\n")
-
+    kalkulator2=[no1+no2,no1-no2,no1*no2,no1/no2,no1**no2,(round(no1**(1/no2),2))]
+    print(kalkulator2[jenisoperator-1])
+    
 aktif=1
 while aktif==1:
     menu()
